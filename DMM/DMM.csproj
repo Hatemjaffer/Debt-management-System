@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C1011DA-59D3-477D-85B9-A948A212A464}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DMM</RootNamespace>
+    <AssemblyName>DMM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\مشروع تطوير منضومة الدراسة والامتحانات خاصة بادورت ودبلوم التخصصي\0تكنو\المنجز-1\تكنو-كورس برامج إدارة المبيعات بتقنية Entity framework\Bunifu ui مهكره\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPage\Add_user_pwoer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_user_pwoer.Designer.cs">
+      <DependentUpon>Add_user_pwoer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\FRM_User_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\FRM_User_Login.Designer.cs">
+      <DependentUpon>FRM_User_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Add_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Users.Designer.cs">
+      <DependentUpon>Add_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Add_Debit_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Debit_Customer.Designer.cs">
+      <DependentUpon>Add_Debit_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Add_Debit_Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Debit_Suppliers.Designer.cs">
+      <DependentUpon>Add_Debit_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Add_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Customer.Designer.cs">
+      <DependentUpon>Add_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Log_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Log_Customer.Designer.cs">
+      <DependentUpon>Log_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Log_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Log_Supplier.Designer.cs">
+      <DependentUpon>Log_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\UPDATE.cs" />
+    <Compile Include="Debit_Oustomer.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Debit_Suppliers.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_About.Designer.cs">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Setting.Designer.cs">
+      <DependentUpon>FRM_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Start.Designer.cs">
+      <DependentUpon>FRM_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MDDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPage\Add_Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage\Add_Suppliers.Designer.cs">
+      <DependentUpon>Add_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AnaylisisPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AnaylisisPage.Designer.cs">
+      <DependentUpon>AnaylisisPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Page_Users.Designer.cs">
+      <DependentUpon>Page_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Page_Home.Designer.cs">
+      <DependentUpon>Page_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Page_Customer.Designer.cs">
+      <DependentUpon>Page_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Suppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Page_Suppliers.Designer.cs">
+      <DependentUpon>Page_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCustomer.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Suppliers.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\ReportPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ReportPage.Designer.cs">
+      <DependentUpon>ReportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rrport\CustomerReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rrport\CustomerReport.Designer.cs">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rrport\SupplierReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rrport\SupplierReport.Designer.cs">
+      <DependentUpon>SupplierReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Customers.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Suppliers.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Users.cs">
+      <DependentUpon>MDDM.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPage\Add_user_pwoer.resx">
+      <DependentUpon>Add_user_pwoer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\FRM_User_Login.resx">
+      <DependentUpon>FRM_User_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Add_Users.resx">
+      <DependentUpon>Add_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Add_Debit_Customer.resx">
+      <DependentUpon>Add_Debit_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Add_Debit_Suppliers.resx">
+      <DependentUpon>Add_Debit_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Add_Customer.resx">
+      <DependentUpon>Add_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Log_Customer.resx">
+      <DependentUpon>Log_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Log_Supplier.resx">
+      <DependentUpon>Log_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_About.resx">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Setting.resx">
+      <DependentUpon>FRM_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Start.resx">
+      <DependentUpon>FRM_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPage\Add_Suppliers.resx">
+      <DependentUpon>Add_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AnaylisisPage.resx">
+      <DependentUpon>AnaylisisPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Page_Users.resx">
+      <DependentUpon>Page_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Page_Home.resx">
+      <DependentUpon>Page_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Page_Customer.resx">
+      <DependentUpon>Page_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Page_Suppliers.resx">
+      <DependentUpon>Page_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pages\ReportPage.resx">
+      <DependentUpon>ReportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rrport\CustomerReport.resx">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rrport\SupplierReport.resx">
+      <DependentUpon>SupplierReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MDDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MDDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MDDM.edmx.diagram">
+      <DependentUpon>MDDM.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\about_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit_analysis_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_file_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_sharp_logo_2_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MDDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MDDM.edmx</DependentUpon>
+      <LastGenOutput>MDDM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MDDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MDDM.edmx</DependentUpon>
+      <LastGenOutput>MDDM.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
